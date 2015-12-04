@@ -14,6 +14,9 @@ html body {
   **Team Page Styles**
   ********************/
   /********************
+  **Contact Form Styles**
+  ********************/
+  /********************
   **Footer Styles**
   ********************/
 }
@@ -149,6 +152,10 @@ html body .hero-section .hero-text #pulse-header {
 html body .hero-section .hero-text #parkhub-header {
   padding-top: 10px;
 }
+html body .hero-section .hero-text p {
+  font-size: 1.75em;
+  font-weight: 200;
+}
 html body .meet-the-team {
   text-align: center;
   margin-top: 75px;
@@ -193,6 +200,37 @@ html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
 }
 html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
   width: 190px;
+}
+html body .contact-form {
+  width: 65%;
+  margin: 50px auto;
+}
+html body .contact-form label {
+  font-size: 1.25em;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+html body .contact-form input {
+  font-size: 1.25em;
+  font-weight: 200;
+}
+html body .contact-form textarea {
+  font-size: 1.25em;
+  font-weight: 200;
+}
+html body .contact-form .submit-form {
+  text-transform: uppercase;
+}
+html body .contact-form .submit-form a {
+  color: #fff;
+}
+html body .contact-form .submit-form a:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+html body .contact-form .robot-check {
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 html body .footer {
   background-color: #f8f8f8;
