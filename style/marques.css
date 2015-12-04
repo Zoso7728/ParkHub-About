@@ -1,0 +1,214 @@
+/********************
+** Created by Marques Robinson.
+** Written in Sass and converted to CSS 
+** by using the terminal command line:
+** sass --watch marques.scss:marques.css --style expanded.
+** Must run this command in order for styles to take effect.
+********************/
+html body {
+  margin: 0;
+  padding: 0;
+  /********************
+  **Hero Section Styles**
+  ********************/
+  /********************
+  **Team Page Styles**
+  ********************/
+  /********************
+  **Footer Styles**
+  ********************/
+}
+html body .wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  /********************
+  **Navigation Styles**
+  ********************/
+  /********************
+  **Custom Styles**
+  ********************/
+}
+html body .wrapper .navigation {
+  background-color: #fff;
+  border: none;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+  font-weight: 400px;
+  letter-spacing: 0;
+  width: 100%;
+}
+html body .wrapper .navigation .cust-nav {
+  float: none;
+  width: 65%;
+  margin: 0 auto;
+}
+html body .wrapper .navigation .cust-nav .active a {
+  background-color: #ef832b;
+  color: #fff;
+  border-radius: 300px;
+}
+html body .wrapper .navigation .cust-nav .active a:hover {
+  background-color: #ef832b;
+  color: #fff;
+  border-radius: 300px;
+}
+html body .wrapper .navigation .cust-nav li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+html body .wrapper .navigation .cust-nav li a {
+  color: #ef832b;
+}
+html body .wrapper .navigation .cust-nav li:hover a {
+  color: #b5cad9;
+}
+html body .wrapper .cust-container {
+  width: 85%;
+}
+html body .wrapper .cust-container .cust-col {
+  padding: 0;
+}
+html body .wrapper .cust-container .cust-row {
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 525px;
+  left: 0;
+}
+html body .wrapper .cust-container .cust-row-parkhub {
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 638px;
+  left: 0;
+}
+html body .wrapper .cust-container .cust-row-prime {
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 408px;
+  left: 0;
+}
+html body .wrapper .cust-container .cust-card {
+  width: 100%;
+}
+html body .wrapper .cust-container .cust-card-header {
+  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+html body .wrapper .cust-container .cust-card-text {
+  color: #919191;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-weight: 200;
+  padding-top: 5em;
+  padding-right: 4em;
+  padding-bottom: 3em;
+  padding-left: 4em;
+}
+html body .wrapper .cust-container .blue-card {
+  background-color: #2e9fe8;
+  padding-bottom: 80px;
+}
+html body .wrapper .cust-container .blue-card-prime {
+  background-color: #2e9fe8;
+  padding-bottom: 50px;
+}
+html body .wrapper .cust-container .white-text {
+  color: #fff;
+}
+html body .hero-section {
+  height: 250px;
+  background-color: #084f7d;
+  opacity: 0.6;
+  color: #fff;
+}
+html body .hero-section .hero-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+html body .hero-section .hero-text h2 {
+  line-height: 150%;
+}
+html body .hero-section .hero-text-pulse {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+html body .hero-section .hero-text-pulse h2 {
+  position: absolute;
+  left: 47.5%;
+  line-height: 150%;
+}
+html body .hero-section .hero-text-pulse .contact-header {
+  margin-top: 0px;
+}
+html body .meet-the-team {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+html body .meet-the-team h3 {
+  text-transform: uppercase;
+  color: #919191;
+  font-size: 2.25em;
+  font-weight: 200;
+}
+html body .meet-the-team .cust-img-card {
+  width: 150px;
+}
+html body .meet-the-team .cust-img-card .img-card {
+  width: 100%;
+  border-radius: 300px;
+  -webkit-fileter: grayscale(100%);
+  opacity: .8;
+}
+html body .meet-the-team .cust-img-card h6 {
+  margin-top: 1em;
+  font-size: 1.25em;
+  color: #4a4a4a;
+  font-weight: 200;
+  line-height: 1.5em;
+}
+html body .meet-the-team .cust-img-card p {
+  font-size: 1em;
+  line-height: 1;
+  color: #c0c2c1;
+}
+html body .footer {
+  background-color: #f8f8f8;
+  color: #919191;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+html body .footer .footer-icon {
+  width: 50px;
+}
+html body .footer h3 {
+  font-size: 35px;
+  font-weight: 300;
+}
+html body .footer h5 {
+  font-size: 28px;
+  font-weight: 200;
+}
+html body .footer .cust-button {
+  border-color: #ef832b;
+  background-color: #f8f8f8;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+html body .footer .cust-button a {
+  color: #ef832b;
+}
+html body .footer .cust-button a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=marques.css.map */
