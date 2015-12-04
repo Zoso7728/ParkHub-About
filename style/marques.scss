@@ -2,7 +2,7 @@
 ** Created by Marques Robinson.
 ** Written in Sass and converted to CSS 
 ** by using the terminal command line:
-** sass --watch marques.scss:marques.css --style expanded.
+** sass --watch marques.scss:marques.css --style expanded
 ** Must run this command in order for styles to take effect.
 ********************/
 
@@ -28,11 +28,11 @@ html {
                 font-weight: 400px;
                 letter-spacing: 0;
                 width: 100%;
+                text-align: center;
 
                 .cust-nav {
                     float: none;
-                    width: 65%;
-                    margin: 0 auto;
+                    display: inline-block;
 
                     .active {
 
