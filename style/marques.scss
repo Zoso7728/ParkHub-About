@@ -8,7 +8,8 @@
 html {
     body {
         margin: 0;
-        padding: 0;  
+        padding: 0; 
+        font-family: Helvetica;
         
         .wrapper {
             max-width: 1280px;
@@ -28,10 +29,16 @@ html {
                 letter-spacing: 0;
                 width: 100%;
                 text-align: center;
+                
+                #logo {
+                    height: 100px;
+                    padding: 0px;
+                }
 
                 .cust-nav {
                     float: none;
                     display: inline-block;
+                    padding-top: 25px;
 
                     .active {
 
@@ -117,18 +124,18 @@ html {
                     font-weight: 200;
                     padding-top: 5em;
                     padding-right: 4em;
-                    padding-bottom: 3em;
+//                    padding-bottom: 2em;
                     padding-left: 4em;
-                }
-                
-                .blue-card {
-                    background-color: #2e9fe8;
-                    padding-bottom: 80px;
                 }
                 
                 .blue-card-prime {
                     background-color: #2e9fe8;
-                    padding-bottom: 50px;
+                    height: 408px;
+                }
+                
+                .blue-card-parkhub {
+                    background-color: #2e9fe8;
+                    height: 638px;
                 }
                 
                 .white-text {
@@ -249,40 +256,40 @@ html {
             width: 65%;
             margin: 50px auto;
             
-            label {
-                font-size: 1.25em;
-                font-weight: 200;
-                margin-bottom: 0;
-            }
-            
-            input {
-                font-size: 1.25em;
-                font-weight: 200;
-            }
-            
-            textarea {
-                font-size: 1.25em;
-                font-weight: 200;
-            }
-            
-            .submit-form {
-//                background-color: #ef832b;
-                text-transform: uppercase;
-                
-                a {
-                    color: #fff;
-                }
-                
-                a:hover {
-                    text-decoration: none;
-                    color: lightgrey;
-                }
-            }
-            
-            .robot-check {
-                margin-top: 25px;
-                margin-bottom: 30px;
-            }
+//            label {
+//                font-size: 1.25em;
+//                font-weight: 200;
+//                margin-bottom: 0;
+//            }
+//            
+//            input {
+//                font-size: 1.25em;
+//                font-weight: 200;
+//            }
+//            
+//            textarea {
+//                font-size: 1.25em;
+//                font-weight: 200;
+//            }
+//            
+//            .submit-form {
+////                background-color: #ef832b;
+//                text-transform: uppercase;
+//                
+//                a {
+//                    color: #fff;
+//                }
+//                
+//                a:hover {
+//                    text-decoration: none;
+//                    color: lightgrey;
+//                }
+//            }
+//            
+//            .robot-check {
+//                margin-top: 25px;
+//                margin-bottom: 30px;
+//            }
         }
         
         /********************

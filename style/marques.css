@@ -7,6 +7,7 @@
 html body {
   margin: 0;
   padding: 0;
+  font-family: Helvetica;
   /********************
   **Hero Section Styles**
   ********************/
@@ -41,9 +42,14 @@ html body .wrapper .navigation {
   width: 100%;
   text-align: center;
 }
+html body .wrapper .navigation #logo {
+  height: 100px;
+  padding: 0px;
+}
 html body .wrapper .navigation .cust-nav {
   float: none;
   display: inline-block;
+  padding-top: 25px;
 }
 html body .wrapper .navigation .cust-nav .active a {
   background-color: #ef832b;
@@ -108,16 +114,15 @@ html body .wrapper .cust-container .cust-card-text {
   font-weight: 200;
   padding-top: 5em;
   padding-right: 4em;
-  padding-bottom: 3em;
   padding-left: 4em;
-}
-html body .wrapper .cust-container .blue-card {
-  background-color: #2e9fe8;
-  padding-bottom: 80px;
 }
 html body .wrapper .cust-container .blue-card-prime {
   background-color: #2e9fe8;
-  padding-bottom: 50px;
+  height: 408px;
+}
+html body .wrapper .cust-container .blue-card-parkhub {
+  background-color: #2e9fe8;
+  height: 638px;
 }
 html body .wrapper .cust-container .white-text {
   color: #fff;
@@ -204,33 +209,6 @@ html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
 html body .contact-form {
   width: 65%;
   margin: 50px auto;
-}
-html body .contact-form label {
-  font-size: 1.25em;
-  font-weight: 200;
-  margin-bottom: 0;
-}
-html body .contact-form input {
-  font-size: 1.25em;
-  font-weight: 200;
-}
-html body .contact-form textarea {
-  font-size: 1.25em;
-  font-weight: 200;
-}
-html body .contact-form .submit-form {
-  text-transform: uppercase;
-}
-html body .contact-form .submit-form a {
-  color: #fff;
-}
-html body .contact-form .submit-form a:hover {
-  text-decoration: none;
-  color: lightgrey;
-}
-html body .contact-form .robot-check {
-  margin-top: 25px;
-  margin-bottom: 30px;
 }
 html body .footer {
   background-color: #f8f8f8;
