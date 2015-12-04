@@ -1,9 +1,8 @@
 /********************
 ** Created by Marques Robinson.
-** Written in Sass and converted to CSS 
-** by using the terminal command line:
+** Written in Sass and converted to CSS by using the terminal command line:
 ** sass --watch marques.scss:marques.css --style expanded
-** Must run this command in order for styles to take effect.
+** Must cd to  run this command in order for styles to take effect.
 ********************/
 html body {
   margin: 0;
@@ -123,8 +122,12 @@ html body .wrapper .cust-container .white-text {
 html body .hero-section {
   height: 250px;
   background-color: #084f7d;
-  opacity: 0.6;
+  background-blend-mode: soft-light;
+  background-position: 50% 20%;
+  background-size: cover;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
   color: #fff;
+  position: relative;
 }
 html body .hero-section .hero-text {
   width: 100%;
@@ -132,21 +135,19 @@ html body .hero-section .hero-text {
   text-align: center;
 }
 html body .hero-section .hero-text h2 {
-  line-height: 150%;
+  line-height: 1.2;
+  font-size: 3.3em;
+  font-weight: 200;
+  margin: 0;
 }
-html body .hero-section .hero-text-pulse {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
+html body .hero-section .hero-text #overview-header {
+  padding-top: 75px;
 }
-html body .hero-section .hero-text-pulse h2 {
-  position: absolute;
-  left: 47.5%;
-  line-height: 150%;
+html body .hero-section .hero-text #pulse-header {
+  padding-top: 100px;
 }
-html body .hero-section .hero-text-pulse .contact-header {
-  margin-top: 0px;
+html body .hero-section .hero-text #parkhub-header {
+  padding-top: 10px;
 }
 html body .meet-the-team {
   text-align: center;
@@ -158,27 +159,40 @@ html body .meet-the-team h3 {
   color: #919191;
   font-size: 2.25em;
   font-weight: 200;
+  margin-bottom: 50px;
 }
-html body .meet-the-team .cust-img-card {
-  width: 150px;
-}
-html body .meet-the-team .cust-img-card .img-card {
+html body .meet-the-team .cust-continer {
   width: 100%;
+}
+html body .meet-the-team .cust-continer .cust-img-row {
+  margin-top: 25px;
+}
+html body .meet-the-team .cust-continer .cust-img-row .cust-img-card {
+  cursor: pointer;
+}
+html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+  width: 160px;
+  height: 160px;
   border-radius: 300px;
-  -webkit-fileter: grayscale(100%);
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-filter: grayscale(100%);
   opacity: .8;
 }
-html body .meet-the-team .cust-img-card h6 {
+html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
   margin-top: 1em;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: #4a4a4a;
   font-weight: 200;
   line-height: 1.5em;
 }
-html body .meet-the-team .cust-img-card p {
+html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
   font-size: 1em;
   line-height: 1;
   color: #c0c2c1;
+}
+html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+  width: 190px;
 }
 html body .footer {
   background-color: #f8f8f8;

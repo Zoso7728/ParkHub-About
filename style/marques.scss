@@ -1,9 +1,8 @@
 /********************
 ** Created by Marques Robinson.
-** Written in Sass and converted to CSS 
-** by using the terminal command line:
+** Written in Sass and converted to CSS by using the terminal command line:
 ** sass --watch marques.scss:marques.css --style expanded
-** Must run this command in order for styles to take effect.
+** Must cd to  run this command in order for styles to take effect.
 ********************/
 
 html {
@@ -145,8 +144,12 @@ html {
         .hero-section {
             height: 250px;
             background-color: #084f7d;
-            opacity: 0.6;
+            background-blend-mode: soft-light;
+            background-position: 50% 20%;
+            background-size: cover;
+            box-shadow: inset rgba(0,0,0,.2) 0 0 7px 2px;
             color: #fff;
+            position: relative;
 
             .hero-text {
                 width: 100%;
@@ -154,24 +157,22 @@ html {
                 text-align: center;
                     
                 h2 {
-                    line-height: 150%; 
-                }
-            }
-            
-            .hero-text-pulse {
-                width: 70%;
-                margin: 0 auto;
-                text-align: center;
-                position: relative;
-                
-                h2 {
-                    position: absolute;
-                    left: 47.5%;
-                    line-height: 150%; 
+                    line-height: 1.2; 
+                    font-size: 3.3em;
+                    font-weight: 200;
+                    margin: 0;
                 }
                 
-                .contact-header {
-                    margin-top: 0px;
+                #overview-header {
+                    padding-top: 75px;
+                }
+                
+                #pulse-header {
+                    padding-top: 100px;
+                }
+                
+                #parkhub-header {
+                    padding-top: 10px;
                 }
             }
         }
@@ -190,32 +191,49 @@ html {
                 color: #919191;
                 font-size: 2.25em;
                 font-weight: 200;
+                margin-bottom: 50px;
             }
             
-            .cust-img-card {
-                width: 150px;
+            .cust-continer {
+                width: 100%;
                 
-                .img-card {
-                    width: 100%;
-                    border-radius: 300px;
-                    -webkit-fileter: grayscale(100%);
-                    opacity: .8;
-                }
-                
-                h6 {
-                    margin-top: 1em;
-                    font-size: 1.25em;
-                    color: #4a4a4a;
-                    font-weight: 200;
-                    line-height: 1.5em;
-                }
-                
-                p {
-                    font-size: 1em;
-                    line-height: 1;
-                    color: #c0c2c1;
+                .cust-img-row {
+                    margin-top: 25px;  
+
+                    .cust-img-card {
+                        cursor: pointer;
+
+                        .img-card {
+                            width: 160px;
+                            height: 160px;
+                            border-radius: 300px;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            -webkit-filter: grayscale(100%);
+                            opacity: .8; 
+                        }
+
+                        h6 {
+                            margin-top: 1em;
+                            font-size: 1.5em;
+                            color: #4a4a4a;
+                            font-weight: 200;
+                            line-height: 1.5em;
+                        }
+
+                        p {
+                            font-size: 1em;
+                            line-height: 1;
+                            color: #c0c2c1;
+                        }
+                        
+                        #courtney {
+                            width: 190px;
+                        }
+                    }
                 }
             }
+            
         }
         
         /********************
