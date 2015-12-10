@@ -1,5 +1,5 @@
 /********************
-** Created by Marques Robinson.
+** Crafted by Marques Robinson.
 ** Written in Sass and converted to CSS by using the terminal command line:
 ** sass --watch marques.scss:marques.css --style expanded
 ** Must cd to  run this command in order for styles to take effect.
@@ -19,6 +19,9 @@ html body {
   ********************/
   /********************
   **Footer Styles**
+  ********************/
+  /********************
+  **Module Popup Styles**
   ********************/
 }
 html body .wrapper {
@@ -45,6 +48,12 @@ html body .wrapper .navigation {
 html body .wrapper .navigation #logo {
   height: 100px;
   padding: 0px;
+}
+html body .wrapper .navigation .cust-navbar-toggle {
+  background-color: #ef832b;
+}
+html body .wrapper .navigation .cust-navbar-toggle .icon-bar {
+  background-color: #fff;
 }
 html body .wrapper .navigation .cust-nav {
   float: none;
@@ -179,9 +188,6 @@ html body .meet-the-team .cust-continer {
 html body .meet-the-team .cust-continer .cust-img-row {
   margin-top: 25px;
 }
-html body .meet-the-team .cust-continer .cust-img-row .cust-img-card {
-  cursor: pointer;
-}
 html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
   width: 160px;
   height: 160px;
@@ -190,6 +196,10 @@ html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
   background-position: 50% 50%;
   -webkit-filter: grayscale(100%);
   opacity: .8;
+}
+html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
 }
 html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
   margin-top: 1em;
@@ -209,6 +219,10 @@ html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
 html body .contact-form {
   width: 65%;
   margin: 50px auto;
+}
+html body .contact-form #submit-form {
+  background-color: #ef832b;
+  display: none;
 }
 html body .footer {
   background-color: #f8f8f8;
@@ -240,5 +254,926 @@ html body .footer .cust-button a {
 html body .footer .cust-button a:hover {
   text-decoration: none;
 }
+html body .modalDialog {
+  position: fixed;
+  font-family: Helvetica;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+html body .modalDialog .modalBox-parkhub {
+  width: 640px;
+  position: relative;
+  margin: 5% auto;
+  padding: 5px 0px 13px 0px;
+  border-radius: 5px;
+  background: #fff;
+}
+html body .modalDialog .modalBox-parkhub .top-margin {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #c0c2c1;
+}
+html body .modalDialog .modalBox-parkhub .top-margin h2 {
+  font-size: 2em;
+  font-weight: 200;
+}
+html body .modalDialog .modalBox-parkhub .top-margin p {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+  width: 160px;
+  height: 160px;
+  border-radius: 300px;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0 auto;
+}
+html body .modalDialog .modalBox-parkhub .bottom-margin {
+  min-height: 160px;
+  max-height: 250px;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0px 45px 0px;
+  overflow: scroll;
+  color: #919191;
+  line-height: 1.5em;
+  font-size: 1.15em;
+  font-weight: 200;
+}
+html body .modalDialog .modalBox-parkhub .badge-parkhub {
+  width: 100%;
+  background-color: #ef832b;
+  position: absolute;
+  bottom: -10;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+}
+html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+  width: 100px;
+  margin: 0 auto;
+}
+html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+html body .modalDialog .modalBox-parkhub .close {
+  background: #fff;
+  color: #919191;
+  line-height: 30px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 1;
+  font-size: 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+}
+html body .modalDialog .modalBox-parkhub .close:hover {
+  color: #c0c2c1;
+}
+html body .modalDialog .modalBox-dialexa {
+  width: 400px;
+  position: relative;
+  margin: 5% auto;
+  padding: 5px 0px 13px 0px;
+  border-radius: 5px;
+  background: #fff;
+}
+html body .modalDialog .modalBox-dialexa .top-margin {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #c0c2c1;
+}
+html body .modalDialog .modalBox-dialexa .top-margin h2 {
+  font-size: 2em;
+  font-weight: 200;
+}
+html body .modalDialog .modalBox-dialexa .top-margin p {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+  width: 160px;
+  height: 160px;
+  border-radius: 300px;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0 auto;
+}
+html body .modalDialog .modalBox-dialexa .bottom-margin {
+  height: 90px;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0px 45px 0px;
+  overflow: scroll;
+  color: #919191;
+  line-height: 1.5em;
+  font-size: 1.15em;
+  font-weight: 200;
+}
+html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+  border: 3px solid #D6B064;
+  border-radius: 15px;
+  padding: .5em;
+}
+html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+  color: #D6B064;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-decoration: none;
+}
+html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+  text-decoration: none;
+}
+html body .modalDialog .modalBox-dialexa .badge-parkhub {
+  width: 100%;
+  background-color: #353E44;
+  position: absolute;
+  bottom: -10;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+}
+html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+  width: 200px;
+  margin: 0 auto;
+}
+html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+html body .modalDialog .modalBox-dialexa .close {
+  background: #fff;
+  color: #919191;
+  line-height: 30px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 1;
+  font-size: 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+}
+html body .modalDialog .modalBox-dialexa .close:hover {
+  color: #c0c2c1;
+}
+html body .modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*******************************************/
+/* ----------- iPhone 4 and 4S ----------- */
+/*******************************************/
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 950px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overview-header {
+    padding-top: 25px;
+  }
+  html body .hero-section .hero-text #pulse-header {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhub-header {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 950px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 250px;
+  }
+}
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 975px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overview-header {
+    padding-top: 25px;
+  }
+  html body .hero-section .hero-text #pulse-header {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhub-header {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 975px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 250px;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 850px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overview-header {
+    padding-top: 75px;
+  }
+  html body .hero-section .hero-text #pulse-header {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhub-header {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 850px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 375px;
+  }
+}
+/*******************************************/
+/* ----------- iPhone 5 and 5S ----------- */
+/*******************************************/
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/************************************/
+/* ----------- iPhone 6 ----------- */
+/************************************/
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 900px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overview-header {
+    padding-top: 50px;
+  }
+  html body .hero-section .hero-text #pulse-header {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhub-header {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 900px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 300px;
+  }
+}
+/* Portrait */
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 900px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overview-header {
+    padding-top: 75px;
+  }
+  html body .hero-section .hero-text #pulse-header {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhub-header {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 900px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 550px;
+  }
+}
+/*************************************/
+/* ----------- iPhone 6+ ----------- */
+/*************************************/
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 900px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overview-header {
+    padding-top: 50px;
+  }
+  html body .hero-section .hero-text #pulse-header {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhub-header {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 900px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 350px;
+  }
+}
+/* Portrait */
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 900px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overview-header {
+    padding-top: 75px;
+  }
+  html body .hero-section .hero-text #pulse-header {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhub-header {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 900px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 600px;
+  }
+}
+/*************************************/
+/* ----------- iPad mini ----------- */
+/*************************************/
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  html body .wrapper .navigation .cust-navbar-toggle {
+    background-color: #ef832b;
+  }
+  html body .wrapper .navigation .cust-navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  html body .wrapper .navigation .cust-nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  html body .wrapper .navigation .cust-nav li a {
+    font-size: 14px;
+  }
+}
+/****************************************/
+/* ----------- iPad 1 and 2 ----------- */
+/****************************************/
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/****************************************/
+/* ----------- iPad 3 and 4 ----------- */
+/****************************************/
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
 
 /*# sourceMappingURL=marques.css.map */

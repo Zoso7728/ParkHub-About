@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>ParkHub.com</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <link rel="shortcut icon" href="images/parkhub-icon.ico" />
 <!--    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />-->
     <link rel="stylesheet" href="style/bootstrap.min.css" />
@@ -12,17 +13,30 @@
     <div class="wrapper">
     
         <nav class="navigation navbar navbar-default">
-            <div class="cust-container container">
-                <a href="index.html"><img id="logo" class="navbar-brand" src="images/logo.png" /></a>
-                <ul class="cust-nav nav navbar-nav">
-                    <li class="active"><a href="index.html">Overview</a></li>
-                    <li><a href="parkhub.html">ParkHub.com</a></li>
-                    <li><a href="prime.html">PRIME</a></li>
-                    <li><a href="pulse.html">PULSE</a></li>
-                    <li><a href="team.html">Meet The Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+          <div class="cust-container container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="cust-navbar-toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="index.html"><img id="logo" class="navbar-brand" src="images/logo.png" /></a>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="cust-nav nav navbar-nav">
+                <li class="active"><a href="index.html">Overview</a></li>
+                <li><a href="parkhub.html">ParkHub.com</a></li>
+                <li><a href="prime.html">PRIME</a></li>
+                <li><a href="pulse.html">PULSE</a></li>
+                <li><a href="team.html">Meet The Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
         </nav>
     </div>
 
@@ -43,12 +57,12 @@
                 </div>
             </div>
             
-            <div class="row">
-                <div class="cust-row"></div>
-                <div class="cust-col col-md-6">
+            <div class="cust-row"></div>
+            <div id="parkhubSection" class="row">
+                <div id="parkhubBottom" class="cust-col col-md-6">
                     <p class="cust-card-text">Everyone has heard the saying "If it ain't broke, don't fix it." That's what a lot of operators think about the tried and true cash-ticket system, except that it is very much a detached, antiquated and analog system. It's kind of like your weird Uncle Micky, who isn't really your uncle but one of your dad's friends from college. He looks ok enough on the surface, but something is not quite right. To solve this problem, ParkHub.com has evolved and created PRIME, the most functional, robust and dependable Parking Revenue Inventory Management Enterprise with real-time reporting. You should check this out. Seriously, don't be like Uncle Micky, he smells weird.</p>
                 </div>
-                <div class="cust-col col-md-6">
+                <div id="parkhubTop" class="cust-col col-md-6">
                     <a href="prime.html"><img class="cust-card" src="images/prime.png"></a>
                 </div>
             </div>
@@ -76,5 +90,7 @@
         </article>
     </section>
     
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
