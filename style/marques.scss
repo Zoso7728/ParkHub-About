@@ -37,6 +37,7 @@
                 
                 .cust-navbar-toggle {
                     background-color: #ef832b;
+                    border: none;
                     
                     .icon-bar {
                         background-color: #fff;
@@ -173,7 +174,7 @@
 
                 h2 {
                     line-height: 1.2; 
-                    font-size: 3.3em;
+                    font-size: 3.8em;
                     font-weight: 200;
                     margin: 0;
                 }
@@ -187,7 +188,7 @@
                 }
 
                 #parkhub-header {
-                    padding-top: 10px;
+                    padding-top: 35px;
                 }
 
                 p {
@@ -195,6 +196,10 @@
                     font-weight: 200;
                 }
             }
+        }
+        
+        #parkhub-hero {
+            height: 330px;
         }
 
 
@@ -591,14 +596,25 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*******************************************/
-/* ----------- iPhone 4 and 4S ----------- */
+/* ----------- iPhone 5 and 5S ----------- */
 /*******************************************/
 
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
       html {
           body {
@@ -622,7 +638,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 950px;
+                        height: 925px;
                         left: 0;
                     }
 
@@ -630,7 +646,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 638px;
+                        height: 538px;
                         left: 0;
                     }
 
@@ -681,13 +697,13 @@
 
                     h2 {
                         line-height: 1.2; 
-                        font-size: 2.25em;
+                        font-size: 2em;
                         font-weight: 200;
                         margin: 0;
                     }
 
                     #overview-header {
-                        padding-top: 25px;
+                        padding-top: 50px;
                     }
 
                     #pulse-header {
@@ -705,20 +721,206 @@
                 }
               }
               
-              #parkhubSection {
+              #overviewSection {
                     position: relative;
-                    height: 950px;
+                    height: 925px;
 
-                    #parkhubTop {
+                    #overviewTop {
                         position: absolute;
                         top: 0;
                     }
 
-                    #parkhubBottom {
+                    #overviewBottom {
                         position: absolute;
                         top: 250px;
                     }
                 }
+          }
+      }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+
+
+/*******************************************/
+/* ----------- iPhone 4 and 4S ----------- */
+/*******************************************/
+
+/* Portrait and Lands cape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      html {
+          body {
+              .wrapper {
+                  .navigation {
+                      
+                  }
+              
+              
+              /********************
+                **Custom Styles**
+                ********************/
+                .cust-container {
+                    width: 85%;
+
+                    .cust-col {
+                        padding: 0;
+                    }
+
+                    .cust-row {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 950px;
+                        left: 0;
+                    }
+
+                    .cust-row-parkhub {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 1200px;
+                        left: 0;
+                    }
+
+                    .cust-row-prime {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 670px;
+                        left: 0;
+                    }
+
+                    .cust-card {
+                        width: 100%;
+                    }
+
+                    .cust-card-header {
+                        color: #4a4a4a;
+                        font-weight: 400;
+                        font-size: 1.5em;
+                        margin-bottom: 0;
+                    }
+
+                    .cust-card-text {
+                        color: #919191;
+                        font-size: 1.25em;
+                        line-height: 1.5em;
+                        font-weight: 200;
+                        padding-top: 2em;
+                        padding-right: 1em;
+                        padding-bottom: 2em;
+                        padding-left: 1em;
+                    }
+                    
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 880px;
+                    }
+                    
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 470px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
+
+                }
+              }
+              
+              /********************
+              **Hero Section Styles**
+              ********************/
+              .hero-section {
+                  
+                  .hero-text {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    h2 {
+                        line-height: 1.2; 
+                        font-size: 2.25em;
+                        font-weight: 200;
+                        margin: 0;
+                    }
+
+                    #overview-header {
+                        padding-top: 25px;
+                    }
+
+                    #pulse-header {
+                        padding-top: 10px;
+                    }
+
+                    #parkhub-header {
+                        padding-top: 10px;
+                        font-size: 2em;
+                    }
+
+                    p {
+                        font-size: 1.75em;
+                        font-weight: 200;
+                    }
+                }
+              }
+              
+              #overviewSection {
+                    position: relative;
+                    height: 950px;
+
+                    #overviewTop {
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    #overviewBottom {
+                        position: absolute;
+                        top: 250px;
+                    }
+                }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 1200px;
+                  
+                  #parkhubTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #parkhubBottom {
+                      position: absolute;
+                      top: 319px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 670px;
+                  
+                  #primeTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #primeBottom {
+                      position: absolute;
+                      top: 200px;
+                  }
+              }
           }
       }
       
@@ -760,7 +962,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 638px;
+                        height: 1200px;
                         left: 0;
                     }
 
@@ -768,7 +970,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 408px;
+                        height: 670px;
                         left: 0;
                     }
 
@@ -794,7 +996,9 @@
                         padding-left: 1em;
                     }
                     
-                    
+                    .white-text {
+                        color: #fff;
+                    }
 
                 }
               }
@@ -811,13 +1015,13 @@
 
                     h2 {
                         line-height: 1.2; 
-                        font-size: 2.25em;
+                        font-size: 2em;
                         font-weight: 200;
                         margin: 0;
                     }
 
                     #overview-header {
-                        padding-top: 25px;
+                        padding-top: 45px;
                     }
 
                     #pulse-header {
@@ -835,16 +1039,16 @@
                 }
               }
               
-              #parkhubSection {
+              #overviewSection {
                     position: relative;
                     height: 975px;
 
-                    #parkhubTop {
+                    #overviewTop {
                         position: absolute;
                         top: 0;
                     }
 
-                    #parkhubBottom {
+                    #overviewBottom {
                         position: absolute;
                         top: 250px;
                     }
@@ -853,164 +1057,7 @@
       }
 }
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-      html {
-          body {
-              .wrapper {
-                  .navigation {
-                      
-                  }
-              
-              
-              /********************
-                **Custom Styles**
-                ********************/
-                .cust-container {
-                    width: 85%;
 
-                    .cust-col {
-                        padding: 0;
-                    }
-
-                    .cust-row {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 850px;
-                        left: 0;
-                    }
-
-                    .cust-row-parkhub {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 638px;
-                        left: 0;
-                    }
-
-                    .cust-row-prime {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 408px;
-                        left: 0;
-                    }
-
-                    .cust-card {
-                        width: 100%;
-                    }
-
-                    .cust-card-header {
-                        color: #4a4a4a;
-                        font-weight: 400;
-                        font-size: 1.5em;
-                        margin-bottom: 0;
-                    }
-
-                    .cust-card-text {
-                        color: #919191;
-                        font-size: 1.25em;
-                        line-height: 1.5em;
-                        font-weight: 200;
-                        padding-top: 2em;
-                        padding-right: 1em;
-                        padding-bottom: 2em;
-                        padding-left: 1em;
-                    }
-                    
-                    
-
-                }
-              }
-              
-              /********************
-              **Hero Section Styles**
-              ********************/
-              .hero-section {
-                  
-                  .hero-text {
-                    width: 100%;
-                    margin: 0 auto;
-                    text-align: center;
-
-                    h2 {
-                        line-height: 1.2; 
-                        font-size: 2.25em;
-                        font-weight: 200;
-                        margin: 0;
-                    }
-
-                    #overview-header {
-                        padding-top: 75px;
-                    }
-
-                    #pulse-header {
-                        padding-top: 100px;
-                    }
-
-                    #parkhub-header {
-                        padding-top: 10px;
-                    }
-
-                    p {
-                        font-size: 1.75em;
-                        font-weight: 200;
-                    }
-                }
-              }
-              
-              #parkhubSection {
-                    position: relative;
-                    height: 850px;
-
-                    #parkhubTop {
-                        position: absolute;
-                        top: 0;
-                    }
-
-                    #parkhubBottom {
-                        position: absolute;
-                        top: 375px;
-                    }
-                }
-          }
-      }
-
-}
-
-/*******************************************/
-/* ----------- iPhone 5 and 5S ----------- */
-/*******************************************/
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
 
 /************************************/
 /* ----------- iPhone 6 ----------- */
@@ -1051,7 +1098,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 638px;
+                        height: 1090px;
                         left: 0;
                     }
 
@@ -1059,7 +1106,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 408px;
+                        height: 618px;
                         left: 0;
                     }
 
@@ -1085,7 +1132,19 @@
                         padding-left: 1em;
                     }
                     
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 730px;
+                    }
                     
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 390px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
 
                 }
               }
@@ -1108,7 +1167,7 @@
                     }
 
                     #overview-header {
-                        padding-top: 50px;
+                        padding-top: 35px;
                     }
 
                     #pulse-header {
@@ -1116,7 +1175,7 @@
                     }
 
                     #parkhub-header {
-                        padding-top: 10px;
+                        padding-top: 50px;
                     }
 
                     p {
@@ -1126,20 +1185,50 @@
                 }
               }
               
-              #parkhubSection {
+              #overviewSection {
                     position: relative;
                     height: 900px;
 
-                    #parkhubTop {
+                    #overviewTop {
                         position: absolute;
                         top: 0;
                     }
 
-                    #parkhubBottom {
+                    #overviewBottom {
                         position: absolute;
                         top: 300px;
                     }
                 }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 1090px;
+                  
+                  #parkhubTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #parkhubBottom {
+                      position: absolute;
+                      top: 360px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 618px;
+                  
+                  #primeTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #primeBottom {
+                      position: absolute;
+                      top: 230px;
+                  }
+              }
           }
       }
       
@@ -1192,7 +1281,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 638px;
+                        height: 1090px;
                         left: 0;
                     }
 
@@ -1200,7 +1289,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 408px;
+                        height: 680px;
                         left: 0;
                     }
 
@@ -1226,7 +1315,19 @@
                         padding-left: 1em;
                     }
                     
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 430px;
+                    }
                     
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 270px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
 
                 }
               }
@@ -1257,7 +1358,7 @@
                     }
 
                     #parkhub-header {
-                        padding-top: 10px;
+                        padding-top: 100px;
                     }
 
                     p {
@@ -1267,20 +1368,404 @@
                 }
               }
               
-              #parkhubSection {
+              #overviewSection {
                     position: relative;
                     height: 900px;
 
-                    #parkhubTop {
+                    #overviewTop {
                         position: absolute;
                         top: 0;
                     }
 
-                    #parkhubBottom {
+                    #overviewBottom {
                         position: absolute;
                         top: 550px;
                     }
                 }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 1090px;
+                  
+                  #parkhubTop {
+                      position: absolute;
+                      top: 0;
+                      width: 100%;
+                  }
+                  
+                  #parkhubBottom {
+                      position: absolute;
+                      top: 660px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 680px;
+                  
+                  #primeTop {
+                      position: absolute;
+                      top: 0;
+                      width: 100%;
+                  }
+                  
+                  #primeBottom {
+                      position: absolute;
+                      top: 420px;
+                  }
+              }
+          }
+      }
+
+}
+
+/*************************************/
+/* ------ iPhone 5 Landscape -------- */
+/*************************************/
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      html {
+          body {
+              .wrapper {
+                  .navigation {
+                      
+                  }
+              
+              
+              /********************
+                **Custom Styles**
+                ********************/
+                .cust-container {
+                    width: 85%;
+
+                    .cust-col {
+                        padding: 0;
+                    }
+
+                    .cust-row {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 850px;
+                        left: 0;
+                    }
+
+                    .cust-row-parkhub {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 1050px;
+                        left: 0;
+                    }
+
+                    .cust-row-prime {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 630px;
+                        left: 0;
+                    }
+
+                    .cust-card {
+                        width: 100%;
+                    }
+
+                    .cust-card-header {
+                        color: #4a4a4a;
+                        font-weight: 400;
+                        font-size: 1.5em;
+                        margin-bottom: 0;
+                    }
+
+                    .cust-card-text {
+                        color: #919191;
+                        font-size: 1.25em;
+                        line-height: 1.5em;
+                        font-weight: 200;
+                        padding-top: 2em;
+                        padding-right: 1em;
+                        padding-bottom: 2em;
+                        padding-left: 1em;
+                    }
+                    
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 490px;
+                    }
+                    
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 280px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
+
+                }
+              }
+              
+              /********************
+              **Hero Section Styles**
+              ********************/
+              .hero-section {
+                  
+                  .hero-text {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    h2 {
+                        line-height: 1.2; 
+                        font-size: 2.25em;
+                        font-weight: 200;
+                        margin: 0;
+                    }
+
+                    #overview-header {
+                        padding-top: 75px;
+                    }
+
+                    #pulse-header {
+                        padding-top: 100px;
+                    }
+
+                    #parkhub-header {
+                        padding-top: 75px;
+                    }
+
+                    p {
+                        font-size: 1.75em;
+                        font-weight: 200;
+                    }
+                }
+              }
+              
+              #overviewSection {
+                    position: relative;
+                    height: 850px;
+
+                    #overviewTop {
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    #overviewBottom {
+                        position: absolute;
+                        top: 470px;
+                    }
+                }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 1050px;
+                  
+                  #parkhubTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #parkhubBottom {
+                      position: absolute;
+                      top: 560px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 630px;
+                  
+                  #primeTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #primeBottom {
+                      position: absolute;
+                      top: 350px;
+                  }
+              }
+          }
+      }
+
+}
+
+/*************************************/
+/* ------- iPhone 4 Landscape ------ */
+/*************************************/
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      html {
+          body {
+              .wrapper {
+                  .navigation {
+                      
+                  }
+              
+              
+              /********************
+                **Custom Styles**
+                ********************/
+                .cust-container {
+                    width: 85%;
+
+                    .cust-col {
+                        padding: 0;
+                    }
+
+                    .cust-row {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 850px;
+                        left: 0;
+                    }
+
+                    .cust-row-parkhub {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 1060px;
+                        left: 0;
+                    }
+
+                    .cust-row-prime {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 645px;
+                        left: 0;
+                    }
+
+                    .cust-card {
+                        width: 100%;
+                    }
+
+                    .cust-card-header {
+                        color: #4a4a4a;
+                        font-weight: 400;
+                        font-size: 1.5em;
+                        margin-bottom: 0;
+                    }
+
+                    .cust-card-text {
+                        color: #919191;
+                        font-size: 1.25em;
+                        line-height: 1.5em;
+                        font-weight: 200;
+                        padding-top: 2em;
+                        padding-right: 1em;
+                        padding-bottom: 2em;
+                        padding-left: 1em;
+                    }
+                    
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 600px;
+                    }
+                    
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 350px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
+
+                }
+              }
+              
+              /********************
+              **Hero Section Styles**
+              ********************/
+              .hero-section {
+                  
+                  .hero-text {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    h2 {
+                        line-height: 1.2; 
+                        font-size: 2.25em;
+                        font-weight: 200;
+                        margin: 0;
+                    }
+
+                    #overview-header {
+                        padding-top: 75px;
+                    }
+
+                    #pulse-header {
+                        padding-top: 100px;
+                    }
+
+                    #parkhub-header {
+                        padding-top: 100px;
+                    }
+
+                    p {
+                        font-size: 1.75em;
+                        font-weight: 200;
+                    }
+                }
+              }
+              
+              #overviewSection {
+                    position: relative;
+                    height: 850px;
+
+                    #overviewTop {
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    #overviewBottom {
+                        position: absolute;
+                        top: 375px;
+                    }
+                }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 1060px;
+                  
+                  #parkhubTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #parkhubBottom {
+                      position: absolute;
+                      top: 460px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 645px;
+                  
+                  #primeTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #primeBottom {
+                      position: absolute;
+                      top: 300px;
+                  }
+              }
           }
       }
 
@@ -1325,7 +1810,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 638px;
+                        height: 1070px;
                         left: 0;
                     }
 
@@ -1333,7 +1818,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 408px;
+                        height: 638px;
                         left: 0;
                     }
 
@@ -1359,7 +1844,19 @@
                         padding-left: 1em;
                     }
                     
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 670px;
+                    }
                     
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 390px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
 
                 }
               }
@@ -1382,7 +1879,7 @@
                     }
 
                     #overview-header {
-                        padding-top: 50px;
+                        padding-top: 25px;
                     }
 
                     #pulse-header {
@@ -1390,7 +1887,7 @@
                     }
 
                     #parkhub-header {
-                        padding-top: 10px;
+                        padding-top: 50px;
                     }
 
                     p {
@@ -1400,20 +1897,50 @@
                 }
               }
               
-              #parkhubSection {
+              #overviewSection {
                     position: relative;
                     height: 900px;
 
-                    #parkhubTop {
+                    #overviewTop {
                         position: absolute;
                         top: 0;
                     }
 
-                    #parkhubBottom {
+                    #overviewBottom {
                         position: absolute;
                         top: 350px;
                     }
                 }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 1070px;
+                  
+                  #parkhubTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #parkhubBottom {
+                      position: absolute;
+                      top: 400px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 638px;
+                  
+                  #primeTop {
+                      position: absolute;
+                      top: 0;
+                  }
+                  
+                  #primeBottom {
+                      position: absolute;
+                      top: 250px;
+                  }
+              }
           }
       }
 
@@ -1464,7 +1991,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 638px;
+                        height: 1110px;
                         left: 0;
                     }
 
@@ -1472,7 +1999,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 408px;
+                        height: 705px;
                         left: 0;
                     }
 
@@ -1498,7 +2025,19 @@
                         padding-left: 1em;
                     }
                     
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 390px;
+                    }
                     
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 250px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
 
                 }
               }
@@ -1529,7 +2068,7 @@
                     }
 
                     #parkhub-header {
-                        padding-top: 10px;
+                        padding-top: 100px;
                     }
 
                     p {
@@ -1539,20 +2078,52 @@
                 }
               }
               
-              #parkhubSection {
+              #overviewSection {
                     position: relative;
                     height: 900px;
 
-                    #parkhubTop {
+                    #overviewTop {
                         position: absolute;
                         top: 0;
                     }
 
-                    #parkhubBottom {
+                    #overviewBottom {
                         position: absolute;
                         top: 600px;
                     }
                 }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 1110px;
+                  
+                  #parkhubTop {
+                      position: absolute;
+                      top: 0;
+                      width: 100%;
+                  }
+                  
+                  #parkhubBottom {
+                      position: absolute;
+                      top: 720px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 705px;
+                  
+                  #primeTop {
+                      position: absolute;
+                      top: 0;
+                      width: 100%;
+                  }
+                  
+                  #primeBottom {
+                      position: absolute;
+                      top: 460px;
+                  }
+              }
           }
       }
 
