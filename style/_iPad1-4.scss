@@ -1,16 +1,12 @@
-/********************************
-** Crafted by Marques Robinson **
-********************************/
-
-/*************************************/
-/* ----------- iPhone 6+ ----------- */
-/*************************************/
+/****************************************/
+/* ----------- iPad 1 and 2 ----------- */
+/****************************************/
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-width: 414px) 
-  and (max-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
       html {
           body {
               .wrapper {
@@ -33,7 +29,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 900px;
+                        height: 920px;
                         left: 0;
                     }
 
@@ -41,7 +37,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 1070px;
+                        height: 1140px;
                         left: 0;
                     }
 
@@ -49,7 +45,7 @@
                         position: absolute;
                         background-color: #f2f2f2;
                         width: 100%;
-                        height: 638px;
+                        height: 738px;
                         left: 0;
                     }
 
@@ -71,13 +67,13 @@
                         font-weight: 200;
                         padding-top: 2em;
                         padding-right: 1em;
-                        padding-bottom: 2em;
+//                        padding-bottom: 2em;
                         padding-left: 1em;
                     }
                     
                     .blue-card-parkhub {
                         background-color: #2e9fe8;
-                        height: 670px;
+                        height: 390px;
                     }
                     
                     .blue-card-prime {
@@ -118,7 +114,8 @@
                     }
 
                     #overviewHeader {
-                        padding-top: 25px;
+                        padding-top: 65px;
+                        font-size: 2.5em;
                     }
 
                     #pulseHeader {
@@ -130,7 +127,7 @@
                     }
 
                     #parkhubHeader {
-                        padding-top: 50px;
+                        padding-top: 75px;
                     }
                       
                     #teamHeader {
@@ -139,615 +136,6 @@
                       
                     #contactHeader {
                         padding-top: 55px;      
-                    }
-
-                    p {
-                        font-size: 1.75em;
-                        font-weight: 200;
-                    }
-                }
-              }
-              
-              /********************
-            **Module Popup Styles**
-            ********************/
-            .modalDialog {
-                position: fixed;
-                font-family: Helvetica;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background: rgba(0,0,0,0.3);
-                z-index: 99999;
-                opacity:0;
-                -webkit-transition: opacity 400ms ease-in;
-                -moz-transition: opacity 400ms ease-in;
-                transition: opacity 400ms ease-in;
-                pointer-events: none;
-
-    //            Parkhub Module
-                .modalBox-parkhub {
-                    width: 320px;
-                    position: relative;
-                    margin: 5% auto;
-                    padding: 5px 0px 13px 0px;
-                    border-radius: 5px;
-                    background: #fff;
-
-                    .top-margin {
-                        text-align: center;
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                        border-bottom: 1px solid #c0c2c1;
-
-                        h2 {
-                            font-size: 1.25em;
-                            font-weight: 200;
-                            margin-top: 5px;
-                            margin-bottom: 0;
-                        }
-
-                        p {
-                            font-size: .75em;
-                            font-weight: 400;
-                        }
-
-                        .img-card {
-                            width: 120px;
-                            height: 120px;
-                            border-radius: 300px;
-                            background-size: cover;
-                            background-position: 50% 50%;
-                            margin: 0 auto;
-                        }
-
-                    }
-
-                    .bottom-margin {
-                        min-height: 60px;
-                        max-height: 420px;
-                        width: 95%;
-                        text-align: center;
-                        margin: 0 auto;
-                        padding: 15px 0px 45px 0px;
-                        overflow: scroll;
-                        color: #919191;
-                        line-height: 1.5em;
-                        font-size: 1.15em;
-                        font-weight: 200;
-                    }
-
-                    .badge-parkhub {
-                        width: 100%;
-                        background-color: #ef832b;
-                        position: absolute;
-                        bottom: -10;
-                        border-bottom-left-radius: 5px;
-                        border-bottom-right-radius: 5px;
-                        box-shadow: rgba(0,0,0,.1) 0 3px 3px 1px inset;
-
-                        .badge-img {
-                            width: 100px;
-                            margin: 0 auto;
-
-                            #badgeImg {
-                                width: 100%;
-                                height: 100%;
-                                margin-top: 5px;
-                                margin-bottom: 10px;
-                            }
-                        }
-                    }
-
-                    .close {
-                        background: #fff;
-                        color: #919191;
-                        line-height: 30px;
-                        position: absolute;
-                        right: -12px;
-                        text-align: center;
-                        top: -10px;
-                        width: 30px;
-                        height: 30px;
-                        text-decoration: none;
-                        font-weight: bold;
-                        -webkit-border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        border-radius: 50%;
-                        opacity: 1;
-                        font-size: 12px;
-                        -moz-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
-                        -webkit-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
-                        box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
-                    }
-
-                    .close:hover { 
-                        color: #c0c2c1; 
-                    }
-                }
-
-    //            Dialexa Module
-                .modalBox-dialexa {
-                    width: 200px;
-                    position: relative;
-                    margin: 5% auto;
-                    padding: 5px 0px 13px 0px;
-                    border-radius: 5px;
-                    background: #fff;
-
-                    .top-margin {
-                        text-align: center;
-                        margin-top: .5em;
-                        margin-bottom: .5em;
-                        border-bottom: 1px solid #c0c2c1;
-
-                        h2 {
-                            font-size: 1.25em;
-                            font-weight: 200;   
-                        }
-
-                        p {
-                            font-size: .75em;
-                            font-weight: 400;
-                        }
-
-                        .img-card {
-                            width: 120px;
-                            height: 120px;
-                            border-radius: 300px;
-                            background-size: cover;
-                            background-position: 50% 50%;
-                            margin: 0 auto;
-                        }
-
-                    }
-
-                    .bottom-margin {
-                        height: 90px;
-                        width: 90%;
-                        text-align: center;
-                        margin: 0 auto;
-                        padding: 5px 0px 5px 0px;
-                        overflow: scroll;
-                        color: #919191;
-                        line-height: 1.5em;
-                        font-size: 1.15em;
-                        font-weight: 200;
-
-                        .link-box {
-                            border: 3px solid #D6B064;
-                            border-radius: 15px;
-                            padding: .25em;
-
-                            a {
-                                color: #D6B064;
-                                font-size: 1em;
-                                letter-spacing: .5px;
-                                font-weight: 300;
-                                text-decoration: none;
-                            }
-
-                            a:hover {
-                                text-decoration: none;
-                            }
-                        }
-
-                    }
-
-                    .badge-parkhub {
-                        width: 100%;
-                        background-color: #353E44;
-                        position: absolute;
-                        bottom: -10;
-                        border-bottom-left-radius: 5px;
-                        border-bottom-right-radius: 5px;
-                        box-shadow: rgba(0,0,0,.1) 0 3px 3px 1px inset;
-
-                        .badge-img {
-                            width: 200px;
-                            margin: 0 auto;
-
-                            #badgeImg {
-                                width: 100%;
-                                height: 100%;
-                                margin-top: 5px;
-                                margin-bottom: 10px;
-                            }
-                        }
-                    }
-
-                    .close {
-                        background: #fff;
-                        color: #919191;
-                        line-height: 30px;
-                        position: absolute;
-                        right: -12px;
-                        text-align: center;
-                        top: -10px;
-                        width: 30px;
-                        height: 30px;
-                        text-decoration: none;
-                        font-weight: bold;
-                        -webkit-border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        border-radius: 50%;
-                        opacity: 1;
-                        font-size: 12px;
-                        -moz-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
-                        -webkit-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
-                        box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
-                    }
-
-                    .close:hover { 
-                        color: #c0c2c1; 
-                    }
-                }
-            }
-              
-              #overviewSection {
-                    position: relative;
-                    height: 900px;
-
-                    #overviewTop {
-                        position: absolute;
-                        top: 0;
-                    }
-
-                    #overviewBottom {
-                        position: absolute;
-                        top: 350px;
-                    }
-                }
-              
-              #parkhubSection {
-                  position: relative;
-                  height: 1100px;
-                  
-                  #parkhubTop {
-                      position: absolute;
-                      top: 0;
-                  }
-                  
-                  #parkhubBottom {
-                      position: absolute;
-                      top: 400px;
-                  }
-              }
-              
-              #primeSection {
-                  position: relative;
-                  height: 638px;
-                  
-                  #primeTop {
-                      position: absolute;
-                      top: 0;
-                  }
-                  
-                  #primeBottom {
-                      position: absolute;
-                      top: 250px;
-                  }
-              }
-          }
-      }
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-width: 414px) 
-  and (max-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-      html {
-          body {
-              .wrapper {
-                  .navigation {
-                      
-                  }
-              
-              
-              /********************
-                **Custom Styles**
-                ********************/
-                .cust-container {
-                    width: 85%;
-
-                    .cust-col {
-                        padding: 0;
-                    }
-
-                    .cust-row {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 900px;
-                        left: 0;
-                    }
-
-                    .cust-row-parkhub {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 1100px;
-                        left: 0;
-                    }
-
-                    .cust-row-prime {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 638px;
-                        left: 0;
-                    }
-
-                    .cust-card {
-                        width: 100%;
-                    }
-
-                    .cust-card-header {
-                        color: #4a4a4a;
-                        font-weight: 400;
-                        font-size: 1.5em;
-                        margin-bottom: 0;
-                    }
-
-                    .cust-card-text {
-                        color: #919191;
-                        font-size: 1.25em;
-                        line-height: 1.5em;
-                        font-weight: 200;
-                        padding-top: 2em;
-                        padding-right: 1em;
-                        padding-bottom: 2em;
-                        padding-left: 1em;
-                    }
-                    
-                    .blue-card-parkhub {
-                        background-color: #2e9fe8;
-                        height: 700px;
-                    }
-                    
-                    .blue-card-prime {
-                        background-color: #2e9fe8;
-                        height: 390px;
-                    }
-                    
-                    .white-text {
-                        color: #fff;
-                    }
-
-                }
-              }
-              
-              /********************
-              **Hero Section Styles**
-              ********************/
-              .hero-section {
-                  height: 250px;
-                  background-color: #084f7d;
-                  background-blend-mode: soft-light;
-                  background-position: 50% 20%;
-                  background-size: cover;
-                  box-shadow: inset rgba(0,0,0,.2) 0 0 7px 2px;
-                  color: #fff;
-                  position: relative;
-                  
-                  .hero-text {
-                    width: 100%;
-                    margin: 0 auto;
-                    text-align: center;
-
-                    h2 {
-                        line-height: 1.2; 
-                        font-size: 2.25em;
-                        font-weight: 200;
-                        margin: 0;
-                    }
-
-                    #overviewHeader {
-                        padding-top: 25px;
-                    }
-
-                    #pulseHeader {
-                        padding-top: 100px;
-                    }
-                      
-                    #primeHeader {
-                        padding-top: 50px;      
-                    }
-
-                    #parkhubHeader {
-                        padding-top: 50px;
-                    }
-                      
-                    #contactHeader {
-                        padding-top: 55px;      
-                    }
-
-                    p {
-                        font-size: 1.75em;
-                        font-weight: 200;
-                    }
-                }
-              }
-              
-              #overviewSection {
-                    position: relative;
-                    height: 900px;
-
-                    #overviewTop {
-                        position: absolute;
-                        top: 0;
-                    }
-
-                    #overviewBottom {
-                        position: absolute;
-                        top: 350px;
-                    }
-                }
-              
-              #parkhubSection {
-                  position: relative;
-                  height: 1100px;
-                  
-                  #parkhubTop {
-                      position: absolute;
-                      top: 0;
-                  }
-                  
-                  #parkhubBottom {
-                      position: absolute;
-                      top: 400px;
-                  }
-              }
-              
-              #primeSection {
-                  position: relative;
-                  height: 638px;
-                  
-                  #primeTop {
-                      position: absolute;
-                      top: 0;
-                  }
-                  
-                  #primeBottom {
-                      position: absolute;
-                      top: 250px;
-                  }
-              }
-          }
-      }
-      
-}
-
-/* Landscape */
-@media only screen 
-  and (min-width: 414px) 
-  and (max-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-      html {
-          body {
-              .wrapper {
-                  .navigation {
-                      
-                  }
-              
-              
-              /********************
-                **Custom Styles**
-                ********************/
-                .cust-container {
-                    width: 85%;
-
-                    .cust-col {
-                        padding: 0;
-                    }
-
-                    .cust-row {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 900px;
-                        left: 0;
-                    }
-
-                    .cust-row-parkhub {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 1150px;
-                        left: 0;
-                    }
-
-                    .cust-row-prime {
-                        position: absolute;
-                        background-color: #f2f2f2;
-                        width: 100%;
-                        height: 705px;
-                        left: 0;
-                    }
-
-                    .cust-card {
-                        width: 100%;
-                    }
-
-                    .cust-card-header {
-                        color: #4a4a4a;
-                        font-weight: 400;
-                        font-size: 1.5em;
-                        margin-bottom: 0;
-                    }
-
-                    .cust-card-text {
-                        color: #919191;
-                        font-size: 1.25em;
-                        line-height: 1.5em;
-                        font-weight: 200;
-                        padding-top: 2em;
-                        padding-right: 1em;
-                        padding-bottom: 2em;
-                        padding-left: 1em;
-                    }
-                    
-                    .blue-card-parkhub {
-                        background-color: #2e9fe8;
-                        height: 430px;
-                    }
-                    
-                    .blue-card-prime {
-                        background-color: #2e9fe8;
-                        height: 250px;
-                    }
-                    
-                    .white-text {
-                        color: #fff;
-                    }
-
-                }
-              }
-              
-              /********************
-              **Hero Section Styles**
-              ********************/
-              .hero-section {
-                  height: 250px;
-                  background-color: #084f7d;
-                  background-blend-mode: soft-light;
-                  background-position: 50% 20%;
-                  background-size: cover;
-                  box-shadow: inset rgba(0,0,0,.2) 0 0 7px 2px;
-                  color: #fff;
-                  position: relative;
-                  
-                  .hero-text {
-                    width: 100%;
-                    margin: 0 auto;
-                    text-align: center;
-
-                    h2 {
-                        line-height: 1.2; 
-                        font-size: 2.25em;
-                        font-weight: 200;
-                        margin: 0;
-                    }
-
-                    #overviewHeader {
-                        padding-top: 75px;
-                    }
-
-                    #pulseHeader {
-                        padding-top: 100px;
-                    }
-                      
-                    #primeHeader {
-                        padding-top: 85px;      
-                    }
-
-                    #parkhubHeader {
-                        padding-top: 100px;
                     }
 
                     p {
@@ -841,7 +229,7 @@
 
     //            Parkhub Module
                 .modalBox-parkhub {
-                    width: 420px;
+                    width: 620px;
                     position: relative;
                     margin: 5% auto;
                     padding: 5px 0px 13px 0px;
@@ -867,8 +255,8 @@
                         }
 
                         .img-card {
-                            width: 120px;
-                            height: 120px;
+                            width: 160px;
+                            height: 160px;
                             border-radius: 300px;
                             background-size: cover;
                             background-position: 50% 50%;
@@ -879,8 +267,8 @@
 
                     .bottom-margin {
                         min-height: 60px;
-                        max-height: 120px;
-                        width: 95%;
+                        max-height: 420px;
+                        width: 90%;
                         text-align: center;
                         margin: 0 auto;
                         padding: 15px 0px 45px 0px;
@@ -942,7 +330,7 @@
 
     //            Dialexa Module
                 .modalBox-dialexa {
-                    width: 340px;
+                    width: 420px;
                     position: relative;
                     margin: 5% auto;
                     padding: 5px 0px 13px 0px;
@@ -1060,7 +448,7 @@
               
               #overviewSection {
                     position: relative;
-                    height: 900px;
+                    height: 920px;
 
                     #overviewTop {
                         position: absolute;
@@ -1069,13 +457,13 @@
 
                     #overviewBottom {
                         position: absolute;
-                        top: 600px;
+                        top: 620px;
                     }
                 }
               
               #parkhubSection {
                   position: relative;
-                  height: 1150px;
+                  height: 1140px;
                   
                   #parkhubTop {
                       position: absolute;
@@ -1085,13 +473,13 @@
                   
                   #parkhubBottom {
                       position: absolute;
-                      top: 720px;
+                      top: 750px;
                   }
               }
               
               #primeSection {
                   position: relative;
-                  height: 705px;
+                  height: 738px;
                   
                   #primeTop {
                       position: absolute;
@@ -1101,10 +489,552 @@
                   
                   #primeBottom {
                       position: absolute;
-                      top: 460px;
+                      top: 480px;
                   }
               }
           }
       }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      html {
+          body {
+              .wrapper {
+                  .navigation {
+                      
+                  }
+              
+              
+              /********************
+                **Custom Styles**
+                ********************/
+                .cust-container {
+                    width: 85%;
+
+                    .cust-col {
+                        padding: 0;
+                    }
+
+                    .cust-row {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 420px;
+                        left: 0;
+                    }
+
+                    .cust-row-parkhub {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 575px;
+                        left: 0;
+                    }
+
+                    .cust-row-prime {
+                        position: absolute;
+                        background-color: #f2f2f2;
+                        width: 100%;
+                        height: 326px;
+                        left: 0;
+                    }
+
+                    .cust-card {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    #parkhubCard {
+                        height: 700px;
+                    }
+
+                    .cust-card-header {
+                        color: #4a4a4a;
+                        font-weight: 400;
+                        font-size: 1.5em;
+                        margin-bottom: 0;
+                    }
+
+                    .cust-card-text {
+                        color: #919191;
+                        font-size: 1.25em;
+                        line-height: 1.5em;
+                        font-weight: 200;
+                        padding-top: 1em;
+                        padding-right: 1em;
+//                        padding-bottom: 2em;
+                        padding-left: 1em;
+                    }
+                    
+                    .blue-card-parkhub {
+                        background-color: #2e9fe8;
+                        height: 575px;
+                    }
+                    
+                    .blue-card-prime {
+                        background-color: #2e9fe8;
+                        height: 326px;
+                    }
+                    
+                    .white-text {
+                        color: #fff;
+                    }
+
+                }
+              }
+              
+              /********************
+              **Hero Section Styles**
+              ********************/
+              .hero-section {
+                  height: 250px;
+                  background-color: #084f7d;
+                  background-blend-mode: soft-light;
+                  background-position: 50% 20%;
+                  background-size: cover;
+                  box-shadow: inset rgba(0,0,0,.2) 0 0 7px 2px;
+                  color: #fff;
+                  position: relative;
+                  
+                  .hero-text {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    h2 {
+                        line-height: 1.2; 
+                        font-size: 2.25em;
+                        font-weight: 200;
+                        margin: 0;
+                    }
+
+                    #overviewHeader {
+                        padding-top: 65px;
+                        font-size: 2.5em;
+                    }
+
+                    #pulseHeader {
+                        padding-top: 100px;
+                    }
+                      
+                    #primeHeader {
+                        padding-top: 75px;      
+                    }
+
+                    #parkhubHeader {
+                        padding-top: 100px;
+                    }
+                      
+                    #teamHeader {
+                        padding-top: 85px;      
+                    }
+                      
+                    #contactHeader {
+                        padding-top: 55px;      
+                    }
+
+                    p {
+                        font-size: 1.75em;
+                        font-weight: 200;
+                    }
+                }
+              }
+              
+              /********************
+            **Team Page Styles**
+            ********************/
+            .meet-the-team {
+                text-align: center;
+                margin-top: 75px;
+                margin-bottom: 50px;
+
+                h3 {
+                    text-transform: uppercase;
+                    color: #919191;
+                    font-size: 2.25em;
+                    font-weight: 200;
+                    margin-bottom: 50px;
+                }
+
+                .cust-continer {
+                    width: 100%;
+
+                    .cust-img-row {
+                        margin-top: 25px;  
+
+                        .cust-img-card {
+
+                            .img-card {
+                                width: 160px;
+                                height: 160px;
+                                border-radius: 300px;
+                                background-size: cover;
+                                background-position: 50% 50%;
+                                -webkit-filter: grayscale(100%);
+                                opacity: .8; 
+                                margin: 0 auto;
+                            }
+
+                            .img-card:hover {
+                                -webkit-filter: grayscale(0%);
+                                opacity: 1;
+                            }
+
+                            h6 {
+                                margin-top: 1em;
+                                font-size: 1.5em;
+                                color: #4a4a4a;
+                                font-weight: 200;
+                                line-height: 1.5em;
+                            }
+
+                            p {
+                                font-size: 1em;
+                                line-height: 1;
+                                color: #c0c2c1;
+                                padding-bottom: 25px;
+                            }
+
+                            #courtney {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+            }
+              
+              /********************
+            **Module Popup Styles**
+            ********************/
+            .modalDialog {
+                position: fixed;
+                font-family: Helvetica;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(0,0,0,0.3);
+                z-index: 99999;
+                opacity:0;
+                -webkit-transition: opacity 400ms ease-in;
+                -moz-transition: opacity 400ms ease-in;
+                transition: opacity 400ms ease-in;
+                pointer-events: none;
+
+    //            Parkhub Module
+                .modalBox-parkhub {
+                    width: 620px;
+                    position: relative;
+                    margin: 5% auto;
+                    padding: 5px 0px 13px 0px;
+                    border-radius: 5px;
+                    background: #fff;
+
+                    .top-margin {
+                        text-align: center;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        border-bottom: 1px solid #c0c2c1;
+
+                        h2 {
+                            font-size: 1.25em;
+                            font-weight: 200;
+                            margin-top: 5px;
+                            margin-bottom: 0;
+                        }
+
+                        p {
+                            font-size: .75em;
+                            font-weight: 400;
+                        }
+
+                        .img-card {
+                            width: 160px;
+                            height: 160px;
+                            border-radius: 300px;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            margin: 0 auto;
+                        }
+
+                    }
+
+                    .bottom-margin {
+                        min-height: 60px;
+                        max-height: 420px;
+                        width: 90%;
+                        text-align: center;
+                        margin: 0 auto;
+                        padding: 15px 0px 45px 0px;
+                        overflow: scroll;
+                        color: #919191;
+                        line-height: 1.5em;
+                        font-size: 1.15em;
+                        font-weight: 200;
+                    }
+
+                    .badge-parkhub {
+                        width: 100%;
+                        background-color: #ef832b;
+                        position: absolute;
+                        bottom: -10;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        box-shadow: rgba(0,0,0,.1) 0 3px 3px 1px inset;
+
+                        .badge-img {
+                            width: 100px;
+                            margin: 0 auto;
+
+                            #badgeImg {
+                                width: 100%;
+                                height: 100%;
+                                margin-top: 5px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .close {
+                        background: #fff;
+                        color: #919191;
+                        line-height: 30px;
+                        position: absolute;
+                        right: -12px;
+                        text-align: center;
+                        top: -10px;
+                        width: 30px;
+                        height: 30px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        opacity: 1;
+                        font-size: 12px;
+                        -moz-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
+                        -webkit-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
+                        box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
+                    }
+
+                    .close:hover { 
+                        color: #c0c2c1; 
+                    }
+                }
+
+    //            Dialexa Module
+                .modalBox-dialexa {
+                    width: 420px;
+                    position: relative;
+                    margin: 5% auto;
+                    padding: 5px 0px 13px 0px;
+                    border-radius: 5px;
+                    background: #fff;
+
+                    .top-margin {
+                        text-align: center;
+                        margin-top: .5em;
+                        margin-bottom: .5em;
+                        border-bottom: 1px solid #c0c2c1;
+
+                        h2 {
+                            font-size: 1.25em;
+                            font-weight: 200;   
+                        }
+
+                        p {
+                            font-size: .75em;
+                            font-weight: 400;
+                        }
+
+                        .img-card {
+                            width: 120px;
+                            height: 120px;
+                            border-radius: 300px;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            margin: 0 auto;
+                        }
+
+                    }
+
+                    .bottom-margin {
+                        height: 90px;
+                        width: 90%;
+                        text-align: center;
+                        margin: 0 auto;
+                        padding: 25px 0px 5px 0px;
+                        overflow: scroll;
+                        color: #919191;
+                        line-height: 1.5em;
+                        font-size: 1.15em;
+                        font-weight: 200;
+
+                        .link-box {
+                            border: 3px solid #D6B064;
+                            border-radius: 15px;
+                            padding: .25em;
+
+                            a {
+                                color: #D6B064;
+                                font-size: 1em;
+                                letter-spacing: .5px;
+                                font-weight: 300;
+                                text-decoration: none;
+                            }
+
+                            a:hover {
+                                text-decoration: none;
+                            }
+                        }
+
+                    }
+
+                    .badge-parkhub {
+                        width: 100%;
+                        background-color: #353E44;
+                        position: absolute;
+                        bottom: -10;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        box-shadow: rgba(0,0,0,.1) 0 3px 3px 1px inset;
+
+                        .badge-img {
+                            width: 200px;
+                            margin: 0 auto;
+
+                            #badgeImg {
+                                width: 100%;
+                                height: 100%;
+                                margin-top: 5px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .close {
+                        background: #fff;
+                        color: #919191;
+                        line-height: 30px;
+                        position: absolute;
+                        right: -12px;
+                        text-align: center;
+                        top: -10px;
+                        width: 30px;
+                        height: 30px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        opacity: 1;
+                        font-size: 12px;
+                        -moz-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
+                        -webkit-box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
+                        box-shadow: rgba(0,0,0,.2) 0 1px 4px 1px;
+                    }
+
+                    .close:hover { 
+                        color: #c0c2c1; 
+                    }
+                }
+            }
+              
+              #overviewSection {
+                    position: relative;
+                    height: 0px;
+
+                    #overviewTop {
+                        position: relative;
+                        top: 0;
+                    }
+
+                    #overviewBottom {
+                        position: relative;
+                        top: 0px;
+                    }
+                }
+              
+              #parkhubSection {
+                  position: relative;
+                  height: 575px;
+                  
+                  #parkhubTop {
+                      position: relative;
+                      top: 0;
+                      width: 50%;
+                      height: 100%;
+                      float: right;
+                  }
+                  
+                  #parkhubBottom {
+                      position: relative;
+                      top: 0px;
+                  }
+              }
+              
+              #primeSection {
+                  position: relative;
+                  height: 0px;
+                  
+                  #primeTop {
+                      position: relative;
+                      top: 0;
+                      width: 50%;
+                  }
+                  
+                  #primeBottom {
+                      position: relative;
+                      top: 0px;
+                  }
+              }
+          }
+      }
+      
+}
+
+/****************************************/
+/* ----------- iPad 3 and 4 ----------- */
+/****************************************/
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 }

@@ -162,7 +162,7 @@ html body .hero-section .hero-text h2 {
   margin: 0;
 }
 html body .hero-section .hero-text #overviewHeader {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 html body .hero-section .hero-text #pulseHeader {
   padding-top: 100px;
@@ -484,7 +484,7 @@ html body .modalDialog:target {
 /* ----------- iPhone 5 and 5S ----------- */
 /*******************************************/
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   html body {
     /********************
     **Hero Section Styles**
@@ -793,7 +793,7 @@ html body .modalDialog:target {
   }
 }
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   html body {
     /********************
     **Hero Section Styles**
@@ -1108,7 +1108,7 @@ html body .modalDialog:target {
 /* ----------- iPhone 4 and 4S ----------- */
 /*******************************************/
 /* Portrait and Lands cape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   html body {
     /********************
     **Hero Section Styles**
@@ -1517,7 +1517,7 @@ html body .modalDialog:target {
   }
 }
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   html body {
     /********************
     **Hero Section Styles**
@@ -1631,7 +1631,7 @@ html body .modalDialog:target {
 /* ----------- iPhone 6 ----------- */
 /************************************/
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   html body {
     /********************
     **Hero Section Styles**
@@ -2031,7 +2031,7 @@ html body .modalDialog:target {
 }
 /* Portrait */
 /* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   html body {
     /********************
     **Hero Section Styles**
@@ -2445,7 +2445,7 @@ html body .modalDialog:target {
 /* ------ iPhone 5 Landscape -------- */
 /*************************************/
 /* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   html body {
     /********************
     **Hero Section Styles**
@@ -2857,7 +2857,7 @@ html body .modalDialog:target {
 /* ------- iPhone 4 Landscape ------ */
 /*************************************/
 /* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   html body {
     /********************
     **Hero Section Styles**
@@ -3214,7 +3214,7 @@ html body .modalDialog:target {
 /* ----------- iPhone 6+ ----------- */
 /*************************************/
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   html body {
     /********************
     **Hero Section Styles**
@@ -3566,7 +3566,7 @@ html body .modalDialog:target {
   }
 }
 /* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   html body {
     /********************
     **Hero Section Styles**
@@ -3712,7 +3712,7 @@ html body .modalDialog:target {
   }
 }
 /* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   html body {
     /********************
     **Hero Section Styles**
@@ -4138,8 +4138,825 @@ html body .modalDialog:target {
 /* ----------- iPad 1 and 2 ----------- */
 /****************************************/
 /* Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  /********************
+**Team Page Styles**
+********************/
+  /********************
+**Module Popup Styles**
+********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 920px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 1140px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 738px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  html body .wrapper .cust-container .blue-card-parkhub {
+    background-color: #2e9fe8;
+    height: 390px;
+  }
+  html body .wrapper .cust-container .blue-card-prime {
+    background-color: #2e9fe8;
+    height: 390px;
+  }
+  html body .wrapper .cust-container .white-text {
+    color: #fff;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overviewHeader {
+    padding-top: 65px;
+    font-size: 2.5em;
+  }
+  html body .hero-section .hero-text #pulseHeader {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhubHeader {
+    padding-top: 75px;
+  }
+  html body .hero-section .hero-text #teamHeader {
+    padding-top: 85px;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 55px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body .meet-the-team {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team h3 {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team .cust-continer {
+    width: 100%;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row {
+    margin-top: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+    margin: 0 auto;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
+    font-size: 1em;
+    line-height: 1;
+    color: #c0c2c1;
+    padding-bottom: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+    width: 100%;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 620px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 420px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 420px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0px 5px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .25em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
+  }
+  html body #overviewSection {
+    position: relative;
+    height: 920px;
+  }
+  html body #overviewSection #overviewTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #overviewSection #overviewBottom {
+    position: absolute;
+    top: 620px;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 1140px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 750px;
+  }
+  html body #primeSection {
+    position: relative;
+    height: 738px;
+  }
+  html body #primeSection #primeTop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  html body #primeSection #primeBottom {
+    position: absolute;
+    top: 480px;
+  }
+}
 /* Portrait */
 /* Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  /********************
+**Team Page Styles**
+********************/
+  /********************
+**Module Popup Styles**
+********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 420px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 575px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 326px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+    height: 100%;
+  }
+  html body .wrapper .cust-container #parkhubCard {
+    height: 700px;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  html body .wrapper .cust-container .blue-card-parkhub {
+    background-color: #2e9fe8;
+    height: 575px;
+  }
+  html body .wrapper .cust-container .blue-card-prime {
+    background-color: #2e9fe8;
+    height: 326px;
+  }
+  html body .wrapper .cust-container .white-text {
+    color: #fff;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overviewHeader {
+    padding-top: 65px;
+    font-size: 2.5em;
+  }
+  html body .hero-section .hero-text #pulseHeader {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #primeHeader {
+    padding-top: 75px;
+  }
+  html body .hero-section .hero-text #parkhubHeader {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #teamHeader {
+    padding-top: 85px;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 55px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body .meet-the-team {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team h3 {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team .cust-continer {
+    width: 100%;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row {
+    margin-top: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+    margin: 0 auto;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
+    font-size: 1em;
+    line-height: 1;
+    color: #c0c2c1;
+    padding-bottom: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+    width: 100%;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 620px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 420px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 420px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0px 5px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .25em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
+  }
+  html body #overviewSection {
+    position: relative;
+    height: 0px;
+  }
+  html body #overviewSection #overviewTop {
+    position: relative;
+    top: 0;
+  }
+  html body #overviewSection #overviewBottom {
+    position: relative;
+    top: 0px;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 575px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: relative;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: relative;
+    top: 0px;
+  }
+  html body #primeSection {
+    position: relative;
+    height: 0px;
+  }
+  html body #primeSection #primeTop {
+    position: relative;
+    top: 0;
+    width: 50%;
+  }
+  html body #primeSection #primeBottom {
+    position: relative;
+    top: 0px;
+  }
+}
 /****************************************/
 /* ----------- iPad 3 and 4 ----------- */
 /****************************************/
