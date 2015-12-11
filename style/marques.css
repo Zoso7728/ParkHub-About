@@ -1,13 +1,16 @@
 /********************
 ** Crafted by Marques Robinson.
 ** Written in Sass and converted to CSS by using the terminal command line:
-** sass --watch marques.scss:marques.css --style expanded
-** Must cd to  run this command in order for styles to take effect.
+** sass --watch style --style expanded
+** Must cd to project file and run this command in order for styles to take effect.
 ********************/
+/********************************
+** Crafted by Marques Robinson **
+********************************/
 html body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica;
+  font-family: 'Open Sans', sans-serif;
   /********************
   **Hero Section Styles**
   ********************/
@@ -122,7 +125,7 @@ html body .wrapper .cust-container .cust-card-text {
   font-size: 1.25em;
   line-height: 1.5em;
   font-weight: 200;
-  padding-top: 5em;
+  padding-top: 4em;
   padding-right: 4em;
   padding-left: 4em;
 }
@@ -158,20 +161,29 @@ html body .hero-section .hero-text h2 {
   font-weight: 200;
   margin: 0;
 }
-html body .hero-section .hero-text #overview-header {
+html body .hero-section .hero-text #overviewHeader {
   padding-top: 75px;
 }
-html body .hero-section .hero-text #pulse-header {
+html body .hero-section .hero-text #pulseHeader {
   padding-top: 100px;
 }
-html body .hero-section .hero-text #parkhub-header {
+html body .hero-section .hero-text #primeHeader {
+  padding-top: 60px;
+}
+html body .hero-section .hero-text #parkhubHeader {
   padding-top: 35px;
+}
+html body .hero-section .hero-text #teamHeader {
+  padding-top: 35px;
+}
+html body .hero-section .hero-text #contactHeader {
+  padding-top: 75px;
 }
 html body .hero-section .hero-text p {
   font-size: 1.75em;
   font-weight: 200;
 }
-html body #parkhub-hero {
+html body #parkhubHero {
   height: 330px;
 }
 html body .meet-the-team {
@@ -200,6 +212,7 @@ html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
   background-position: 50% 50%;
   -webkit-filter: grayscale(100%);
   opacity: .8;
+  margin: 0 auto;
 }
 html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
   -webkit-filter: grayscale(0%);
@@ -305,7 +318,7 @@ html body .modalDialog .modalBox-parkhub .top-margin .img-card {
 }
 html body .modalDialog .modalBox-parkhub .bottom-margin {
   min-height: 160px;
-  max-height: 250px;
+  max-height: 230px;
   width: 95%;
   text-align: center;
   margin: 0 auto;
@@ -464,6 +477,9 @@ html body .modalDialog:target {
   pointer-events: auto;
 }
 
+/********************************
+** Crafted by Marques Robinson **
+********************************/
 /*******************************************/
 /* ----------- iPhone 5 and 5S ----------- */
 /*******************************************/
@@ -473,6 +489,9 @@ html body .modalDialog:target {
     /********************
     **Hero Section Styles**
     ********************/
+  /********************
+**Module Popup Styles**
+********************/
   }
   html body .wrapper {
     /********************
@@ -525,6 +544,16 @@ html body .modalDialog:target {
     padding-bottom: 2em;
     padding-left: 1em;
   }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
   html body .hero-section .hero-text {
     width: 100%;
     margin: 0 auto;
@@ -536,18 +565,219 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
+  html body .hero-section .hero-text #overviewHeader {
     padding-top: 50px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
+  html body .hero-section .hero-text #parkhubHeader {
     padding-top: 10px;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 240px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 100px;
+    max-height: 150px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 200px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .5em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -563,6 +793,317 @@ html body .modalDialog:target {
   }
 }
 /* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  /********************
+**Module Popup Styles**
+********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 925px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 538px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 408px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overviewHeader {
+    padding-top: 50px;
+  }
+  html body .hero-section .hero-text #pulseHeader {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #parkhubHeader {
+    padding-top: 10px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 240px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 100px;
+    max-height: 150px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 200px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .5em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
+  }
+  html body #overviewSection {
+    position: relative;
+    height: 925px;
+  }
+  html body #overviewSection #overviewTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #overviewSection #overviewBottom {
+    position: absolute;
+    top: 250px;
+  }
+}
+/********************************
+** Crafted by Marques Robinson **
+********************************/
 /*******************************************/
 /* ----------- iPhone 4 and 4S ----------- */
 /*******************************************/
@@ -572,6 +1113,12 @@ html body .modalDialog:target {
     /********************
     **Hero Section Styles**
     ********************/
+  /********************
+**Team Page Styles**
+********************/
+  /********************
+**Module Popup Styles**
+********************/
   }
   html body .wrapper {
     /********************
@@ -602,7 +1149,7 @@ html body .modalDialog:target {
     position: absolute;
     background-color: #f2f2f2;
     width: 100%;
-    height: 670px;
+    height: 690px;
     left: 0;
   }
   html body .wrapper .cust-container .cust-card {
@@ -630,10 +1177,20 @@ html body .modalDialog:target {
   }
   html body .wrapper .cust-container .blue-card-prime {
     background-color: #2e9fe8;
-    height: 470px;
+    height: 490px;
   }
   html body .wrapper .cust-container .white-text {
     color: #fff;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
   }
   html body .hero-section .hero-text {
     width: 100%;
@@ -646,19 +1203,281 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
-    padding-top: 25px;
+  html body .hero-section .hero-text #overviewHeader {
+    padding-top: 15px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 10px;
   }
-  html body .hero-section .hero-text #parkhub-header {
-    padding-top: 10px;
-    font-size: 2em;
+  html body .hero-section .hero-text #primeHeader {
+    padding-top: 50px;
+  }
+  html body .hero-section .hero-text #parkhubHeader {
+    padding-top: 75px;
+    font-size: 1.65em;
+  }
+  html body .hero-section .hero-text #teamHeader {
+    padding-top: 45px;
+    font-size: 1.65em;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 40px;
+  }
+  html body .hero-section .hero-text #contactParagraph {
+    font-size: 1.25em;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .meet-the-team {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team h3 {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team .cust-continer {
+    width: 100%;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row {
+    margin-top: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+    margin: 0 auto;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
+    font-size: 1em;
+    line-height: 1;
+    color: #c0c2c1;
+    padding-bottom: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+    width: 100%;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 240px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 180px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 200px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .5em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -686,7 +1505,7 @@ html body .modalDialog:target {
   }
   html body #primeSection {
     position: relative;
-    height: 670px;
+    height: 690px;
   }
   html body #primeSection #primeTop {
     position: absolute;
@@ -719,7 +1538,7 @@ html body .modalDialog:target {
     position: absolute;
     background-color: #f2f2f2;
     width: 100%;
-    height: 975px;
+    height: 985px;
     left: 0;
   }
   html body .wrapper .cust-container .cust-row-parkhub {
@@ -733,7 +1552,7 @@ html body .modalDialog:target {
     position: absolute;
     background-color: #f2f2f2;
     width: 100%;
-    height: 670px;
+    height: 690px;
     left: 0;
   }
   html body .wrapper .cust-container .cust-card {
@@ -758,6 +1577,16 @@ html body .modalDialog:target {
   html body .wrapper .cust-container .white-text {
     color: #fff;
   }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
   html body .hero-section .hero-text {
     width: 100%;
     margin: 0 auto;
@@ -769,14 +1598,14 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
-    padding-top: 45px;
+  html body .hero-section .hero-text #overviewHeader {
+    padding-top: 25px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
-    padding-top: 10px;
+  html body .hero-section .hero-text #parkhubHeader {
+    padding-top: 65px;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
@@ -784,7 +1613,7 @@ html body .modalDialog:target {
   }
   html body #overviewSection {
     position: relative;
-    height: 975px;
+    height: 985px;
   }
   html body #overviewSection #overviewTop {
     position: absolute;
@@ -795,6 +1624,9 @@ html body .modalDialog:target {
     top: 250px;
   }
 }
+/********************************
+** Crafted by Marques Robinson **
+********************************/
 /************************************/
 /* ----------- iPhone 6 ----------- */
 /************************************/
@@ -804,6 +1636,12 @@ html body .modalDialog:target {
     /********************
     **Hero Section Styles**
     ********************/
+  /********************
+**Team Page Styles**
+********************/
+  /********************
+**Module Popup Styles**
+********************/
   }
   html body .wrapper {
     /********************
@@ -827,14 +1665,14 @@ html body .modalDialog:target {
     position: absolute;
     background-color: #f2f2f2;
     width: 100%;
-    height: 1090px;
+    height: 1140px;
     left: 0;
   }
   html body .wrapper .cust-container .cust-row-prime {
     position: absolute;
     background-color: #f2f2f2;
     width: 100%;
-    height: 618px;
+    height: 650px;
     left: 0;
   }
   html body .wrapper .cust-container .cust-card {
@@ -858,14 +1696,24 @@ html body .modalDialog:target {
   }
   html body .wrapper .cust-container .blue-card-parkhub {
     background-color: #2e9fe8;
-    height: 730px;
+    height: 780px;
   }
   html body .wrapper .cust-container .blue-card-prime {
     background-color: #2e9fe8;
-    height: 390px;
+    height: 420px;
   }
   html body .wrapper .cust-container .white-text {
     color: #fff;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
   }
   html body .hero-section .hero-text {
     width: 100%;
@@ -878,18 +1726,271 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
+  html body .hero-section .hero-text #overviewHeader {
     padding-top: 35px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
+  html body .hero-section .hero-text #parkhubHeader {
     padding-top: 50px;
+    font-size: 2em;
+  }
+  html body .hero-section .hero-text #teamHeader {
+    padding-top: 75px;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .meet-the-team {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team h3 {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team .cust-continer {
+    width: 100%;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row {
+    margin-top: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+    margin: 0 auto;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
+    font-size: 1em;
+    line-height: 1;
+    color: #c0c2c1;
+    padding-bottom: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+    width: 100%;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 320px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 250px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 200px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0px 5px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .25em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -905,7 +2006,7 @@ html body .modalDialog:target {
   }
   html body #parkhubSection {
     position: relative;
-    height: 1090px;
+    height: 1140px;
   }
   html body #parkhubSection #parkhubTop {
     position: absolute;
@@ -917,7 +2018,7 @@ html body .modalDialog:target {
   }
   html body #primeSection {
     position: relative;
-    height: 618px;
+    height: 650px;
   }
   html body #primeSection #primeTop {
     position: absolute;
@@ -935,6 +2036,12 @@ html body .modalDialog:target {
     /********************
     **Hero Section Styles**
     ********************/
+  /********************
+**Team Page Styles**
+********************/
+  /********************
+**Module Popup Styles**
+********************/
   }
   html body .wrapper {
     /********************
@@ -965,7 +2072,7 @@ html body .modalDialog:target {
     position: absolute;
     background-color: #f2f2f2;
     width: 100%;
-    height: 680px;
+    height: 700px;
     left: 0;
   }
   html body .wrapper .cust-container .cust-card {
@@ -993,10 +2100,20 @@ html body .modalDialog:target {
   }
   html body .wrapper .cust-container .blue-card-prime {
     background-color: #2e9fe8;
-    height: 270px;
+    height: 280px;
   }
   html body .wrapper .cust-container .white-text {
     color: #fff;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
   }
   html body .hero-section .hero-text {
     width: 100%;
@@ -1009,18 +2126,278 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
+  html body .hero-section .hero-text #overviewHeader {
     padding-top: 75px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
+  html body .hero-section .hero-text #primeHeader {
+    padding-top: 80px;
+  }
+  html body .hero-section .hero-text #parkhubHeader {
     padding-top: 100px;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 65px;
+  }
+  html body .hero-section .hero-text #contactParagraph {
+    font-size: 1.25em;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .meet-the-team {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team h3 {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team .cust-continer {
+    width: 100%;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row {
+    margin-top: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+    margin: 0 auto;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
+    font-size: 1em;
+    line-height: 1;
+    color: #c0c2c1;
+    padding-bottom: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+    width: 100%;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 420px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 120px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 340px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0px 5px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .25em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -1049,7 +2426,7 @@ html body .modalDialog:target {
   }
   html body #primeSection {
     position: relative;
-    height: 680px;
+    height: 700px;
   }
   html body #primeSection #primeTop {
     position: absolute;
@@ -1061,6 +2438,9 @@ html body .modalDialog:target {
     top: 420px;
   }
 }
+/********************************
+** Crafted by Marques Robinson **
+********************************/
 /*************************************/
 /* ------ iPhone 5 Landscape -------- */
 /*************************************/
@@ -1070,6 +2450,12 @@ html body .modalDialog:target {
     /********************
     **Hero Section Styles**
     ********************/
+  /********************
+**Team Page Styles**
+********************/
+  /********************
+**Module Popup Styles**
+********************/
   }
   html body .wrapper {
     /********************
@@ -1133,6 +2519,16 @@ html body .modalDialog:target {
   html body .wrapper .cust-container .white-text {
     color: #fff;
   }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
   html body .hero-section .hero-text {
     width: 100%;
     margin: 0 auto;
@@ -1144,18 +2540,278 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
+  html body .hero-section .hero-text #overviewHeader {
     padding-top: 75px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
+  html body .hero-section .hero-text #parkhubHeader {
     padding-top: 75px;
+  }
+  html body .hero-section .hero-text #teamHeader {
+    padding-top: 50px;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 65px;
+  }
+  html body .hero-section .hero-text #contactParagraph {
+    font-size: 1.25em;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .meet-the-team {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team h3 {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team .cust-continer {
+    width: 100%;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row {
+    margin-top: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+    margin: 0 auto;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
+    font-size: 1em;
+    line-height: 1;
+    color: #c0c2c1;
+    padding-bottom: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+    width: 100%;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 420px;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 80px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 200px;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0px 5px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .25em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -1194,6 +2850,9 @@ html body .modalDialog:target {
     top: 350px;
   }
 }
+/********************************
+** Crafted by Marques Robinson **
+********************************/
 /*************************************/
 /* ------- iPhone 4 Landscape ------ */
 /*************************************/
@@ -1203,6 +2862,9 @@ html body .modalDialog:target {
     /********************
     **Hero Section Styles**
     ********************/
+  /********************
+**Module Popup Styles**
+********************/
   }
   html body .wrapper {
     /********************
@@ -1266,6 +2928,16 @@ html body .modalDialog:target {
   html body .wrapper .cust-container .white-text {
     color: #fff;
   }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
   html body .hero-section .hero-text {
     width: 100%;
     margin: 0 auto;
@@ -1277,18 +2949,226 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
+  html body .hero-section .hero-text #overviewHeader {
     padding-top: 75px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
+  html body .hero-section .hero-text #parkhubHeader {
     padding-top: 100px;
+  }
+  html body .hero-section .hero-text #teamHeader {
+    padding-top: 75px;
+    font-size: 1.75em;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 60px;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 440px;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 100px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 350px;
+    position: relative;
+    margin: 3% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 70px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .5em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -1327,6 +3207,9 @@ html body .modalDialog:target {
     top: 300px;
   }
 }
+/********************************
+** Crafted by Marques Robinson **
+********************************/
 /*************************************/
 /* ----------- iPhone 6+ ----------- */
 /*************************************/
@@ -1336,6 +3219,9 @@ html body .modalDialog:target {
     /********************
     **Hero Section Styles**
     ********************/
+  /********************
+**Module Popup Styles**
+********************/
   }
   html body .wrapper {
     /********************
@@ -1399,6 +3285,16 @@ html body .modalDialog:target {
   html body .wrapper .cust-container .white-text {
     color: #fff;
   }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
   html body .hero-section .hero-text {
     width: 100%;
     margin: 0 auto;
@@ -1410,18 +3306,227 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
+  html body .hero-section .hero-text #overviewHeader {
     padding-top: 25px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
+  html body .hero-section .hero-text #parkhubHeader {
     padding-top: 50px;
+  }
+  html body .hero-section .hero-text #teamHeader {
+    padding-top: 85px;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 55px;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 320px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 420px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 200px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0px 5px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .25em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -1437,7 +3542,7 @@ html body .modalDialog:target {
   }
   html body #parkhubSection {
     position: relative;
-    height: 1070px;
+    height: 1100px;
   }
   html body #parkhubSection #parkhubTop {
     position: absolute;
@@ -1461,8 +3566,7 @@ html body .modalDialog:target {
   }
 }
 /* Portrait */
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   html body {
     /********************
     **Hero Section Styles**
@@ -1490,7 +3594,159 @@ html body .modalDialog:target {
     position: absolute;
     background-color: #f2f2f2;
     width: 100%;
-    height: 1110px;
+    height: 1100px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-prime {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 638px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-card {
+    width: 100%;
+  }
+  html body .wrapper .cust-container .cust-card-header {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  html body .wrapper .cust-container .cust-card-text {
+    color: #919191;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+  }
+  html body .wrapper .cust-container .blue-card-parkhub {
+    background-color: #2e9fe8;
+    height: 700px;
+  }
+  html body .wrapper .cust-container .blue-card-prime {
+    background-color: #2e9fe8;
+    height: 390px;
+  }
+  html body .wrapper .cust-container .white-text {
+    color: #fff;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
+  }
+  html body .hero-section .hero-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  html body .hero-section .hero-text h2 {
+    line-height: 1.2;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin: 0;
+  }
+  html body .hero-section .hero-text #overviewHeader {
+    padding-top: 25px;
+  }
+  html body .hero-section .hero-text #pulseHeader {
+    padding-top: 100px;
+  }
+  html body .hero-section .hero-text #primeHeader {
+    padding-top: 50px;
+  }
+  html body .hero-section .hero-text #parkhubHeader {
+    padding-top: 50px;
+  }
+  html body .hero-section .hero-text #contactHeader {
+    padding-top: 55px;
+  }
+  html body .hero-section .hero-text p {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  html body #overviewSection {
+    position: relative;
+    height: 900px;
+  }
+  html body #overviewSection #overviewTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #overviewSection #overviewBottom {
+    position: absolute;
+    top: 350px;
+  }
+  html body #parkhubSection {
+    position: relative;
+    height: 1100px;
+  }
+  html body #parkhubSection #parkhubTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #parkhubSection #parkhubBottom {
+    position: absolute;
+    top: 400px;
+  }
+  html body #primeSection {
+    position: relative;
+    height: 638px;
+  }
+  html body #primeSection #primeTop {
+    position: absolute;
+    top: 0;
+  }
+  html body #primeSection #primeBottom {
+    position: absolute;
+    top: 250px;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  html body {
+    /********************
+    **Hero Section Styles**
+    ********************/
+  /********************
+**Team Page Styles**
+********************/
+  /********************
+**Module Popup Styles**
+********************/
+  }
+  html body .wrapper {
+    /********************
+      **Custom Styles**
+      ********************/
+  }
+  html body .wrapper .cust-container {
+    width: 85%;
+  }
+  html body .wrapper .cust-container .cust-col {
+    padding: 0;
+  }
+  html body .wrapper .cust-container .cust-row {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 900px;
+    left: 0;
+  }
+  html body .wrapper .cust-container .cust-row-parkhub {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 1150px;
     left: 0;
   }
   html body .wrapper .cust-container .cust-row-prime {
@@ -1521,7 +3777,7 @@ html body .modalDialog:target {
   }
   html body .wrapper .cust-container .blue-card-parkhub {
     background-color: #2e9fe8;
-    height: 390px;
+    height: 430px;
   }
   html body .wrapper .cust-container .blue-card-prime {
     background-color: #2e9fe8;
@@ -1529,6 +3785,16 @@ html body .modalDialog:target {
   }
   html body .wrapper .cust-container .white-text {
     color: #fff;
+  }
+  html body .hero-section {
+    height: 250px;
+    background-color: #084f7d;
+    background-blend-mode: soft-light;
+    background-position: 50% 20%;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 7px 2px;
+    color: #fff;
+    position: relative;
   }
   html body .hero-section .hero-text {
     width: 100%;
@@ -1541,18 +3807,272 @@ html body .modalDialog:target {
     font-weight: 200;
     margin: 0;
   }
-  html body .hero-section .hero-text #overview-header {
+  html body .hero-section .hero-text #overviewHeader {
     padding-top: 75px;
   }
-  html body .hero-section .hero-text #pulse-header {
+  html body .hero-section .hero-text #pulseHeader {
     padding-top: 100px;
   }
-  html body .hero-section .hero-text #parkhub-header {
+  html body .hero-section .hero-text #primeHeader {
+    padding-top: 85px;
+  }
+  html body .hero-section .hero-text #parkhubHeader {
     padding-top: 100px;
   }
   html body .hero-section .hero-text p {
     font-size: 1.75em;
     font-weight: 200;
+  }
+  html body .meet-the-team {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team h3 {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 2.25em;
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+  html body .meet-the-team .cust-continer {
+    width: 100%;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row {
+    margin-top: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+    margin: 0 auto;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card .img-card:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card h6 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card p {
+    font-size: 1em;
+    line-height: 1;
+    color: #c0c2c1;
+    padding-bottom: 25px;
+  }
+  html body .meet-the-team .cust-continer .cust-img-row .cust-img-card #courtney {
+    width: 100%;
+  }
+  html body .modalDialog {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  html body .modalDialog .modalBox-parkhub {
+    width: 420px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-parkhub .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .bottom-margin {
+    min-height: 60px;
+    max-height: 120px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0px 45px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub {
+    width: 100%;
+    background-color: #ef832b;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-parkhub .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-parkhub .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-parkhub .close:hover {
+    color: #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa {
+    width: 340px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 0px 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #c0c2c1;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin p {
+    font-size: .75em;
+    font-weight: 400;
+  }
+  html body .modalDialog .modalBox-dialexa .top-margin .img-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin {
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0px 5px 0px;
+    overflow: scroll;
+    color: #919191;
+    line-height: 1.5em;
+    font-size: 1.15em;
+    font-weight: 200;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box {
+    border: 3px solid #D6B064;
+    border-radius: 15px;
+    padding: .25em;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a {
+    color: #D6B064;
+    font-size: 1em;
+    letter-spacing: .5px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .bottom-margin .link-box a:hover {
+    text-decoration: none;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub {
+    width: 100%;
+    background-color: #353E44;
+    position: absolute;
+    bottom: -10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px 1px inset;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  html body .modalDialog .modalBox-dialexa .badge-parkhub .badge-img #badgeImg {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  html body .modalDialog .modalBox-dialexa .close {
+    background: #fff;
+    color: #919191;
+    line-height: 30px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px 1px;
+  }
+  html body .modalDialog .modalBox-dialexa .close:hover {
+    color: #c0c2c1;
   }
   html body #overviewSection {
     position: relative;
@@ -1568,7 +4088,7 @@ html body .modalDialog:target {
   }
   html body #parkhubSection {
     position: relative;
-    height: 1110px;
+    height: 1150px;
   }
   html body #parkhubSection #parkhubTop {
     position: absolute;
